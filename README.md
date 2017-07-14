@@ -1,4 +1,4 @@
-Stadford Algorithms Specialization Assignments
+Stanford Algorithms Specialization Assignments
 ===
 
 Part I
@@ -30,7 +30,7 @@ Part III
      
 Part IV 
 ---
-### Shortest Paths Revisited, NP-Complete Problems and What To Do About Them.
+### Shortest Paths Revisited, NP-Complete Problems and What To Do About Them
 
 * Week 9: Determining negative cycles and find shortest shortest path.<br>
 * Week 10: Traveling salesman problem.<br>
