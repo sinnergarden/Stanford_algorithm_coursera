@@ -6,31 +6,31 @@ using namespace std;
 
 int main(){
   ifstream testFile;
-  testFile.open("SCC_small.txt");
+  testFile.open("SCC.txt");
   int v, w;
   DiGraph G;
   while (testFile >> v >> w) {
     G.addEdge(v,w);
   }
-
+  
   testFile.close();
-  G.showGraph();
-  cout<<endl;
-  G.reverse();
-  G.reverse();
-  G.showGraph();
 
-  
-  /*
-  DiGraph G(V);
-  
-  for(int i = 0; i < edge_num; i++){
-    //read and add edge
-    G.addEdge(v, w);
-  }
-  
-  SCC scc(G);
+  cout<<"Finish reading input..."<<endl;
+
+  DiGraph H = G.reverse();
+  cout<<"Finish creating H..."<<endl;
+
+  G.reverse();
+  cout<<"Finish reversing back G..."<<endl;
+      
+  SCC scc;
+  scc.scc_step1(H);
+  cout<<"Finish first dfs..."<<endl;
+
+  scc.scc_step2(G);
+  cout<<"Finish second dfs..."<<endl;
+  //scc.printReversePostOrder();
   scc.printResult();
-  */
+  
   return 0;
 }
